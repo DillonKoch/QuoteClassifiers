@@ -10,7 +10,8 @@ RUN apt-get update && \
 
 # Install Python packages
 RUN pip3 install torch torchvision torchaudio \
-    numpy pandas matplotlib scikit-learn nltk tqdm
+    numpy pandas matplotlib scikit-learn nltk tqdm \
+    transformers autopep8
 
 # Create a symbolic link to associate python with python3
 RUN ln -s /usr/bin/python3 /usr/bin/python
